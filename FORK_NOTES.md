@@ -33,7 +33,7 @@ Chat ID。Chat ID 是半公开标识（并非秘密），知道目标 IP、Agent
 
 ### 3. 更新与下载源改指本仓库
 全部安装脚本、OTA 更新脚本中的代码拉取地址由上游仓库改为本仓库
-（`raw.githubusercontent.com/yinfengxu-crypto/IP-Sentinel/main`）。后续即使上游
+（`raw.githubusercontent.com/kimorix/IP-Sentinel/main`）。后续即使上游
 仓库发生变动，也不会未经本仓库确认就进入本分支的部署机器；同步上游更新改为
 人工审查后合并。
 
