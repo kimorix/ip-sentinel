@@ -45,7 +45,7 @@ fi
 
 if [ ! -s "$PROBE_SCRIPT" ]; then
     # [首选防线] 严格遵守从官方主干拉取，捍卫纯净底线
-    curl -sL -m 10 "https://raw.githubusercontent.com/yinfengxu-crypto/IP-Sentinel/main/third_party/IPQuality/ip.sh" -o "$PROBE_SCRIPT" 2>/dev/null
+    curl -sL -m 10 "https://raw.githubusercontent.com/kimorix/IP-Sentinel/main/third_party/IPQuality/ip.sh" -o "$PROBE_SCRIPT" 2>/dev/null
     
     # [文件防伪校验] 剔除因解析失效返回的污染文本，并降级至双栈 CDN 节点兜底
     if ! grep -q "xykt" "$PROBE_SCRIPT" 2>/dev/null; then
