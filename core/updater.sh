@@ -9,7 +9,7 @@ INSTALL_DIR="/opt/ip_sentinel"
 CONFIG_FILE="${INSTALL_DIR}/config.conf"
 UA_TIME_FILE="${INSTALL_DIR}/core/.ua_last_update"
 
-REPO_RAW_URL="https://raw.githubusercontent.com/yinfengxu-crypto/IP-Sentinel/main"
+REPO_RAW_URL="https://raw.githubusercontent.com/kimorix/IP-Sentinel/main"
 
 # --- [底层数据链装载] ---
 if [ ! -f "$CONFIG_FILE" ]; then
@@ -119,7 +119,7 @@ fi
 # [容灾校验] 外置供应链投毒防线与底层签名嗅探
 # ==========================================================
 TMP_PROBE="/tmp/ip_sentinel_probe.sh"
-$CURL_CMD "https://raw.githubusercontent.com/yinfengxu-crypto/IP-Sentinel/main/third_party/IPQuality/ip.sh" -o "$TMP_PROBE"
+$CURL_CMD "https://raw.githubusercontent.com/kimorix/IP-Sentinel/main/third_party/IPQuality/ip.sh" -o "$TMP_PROBE"
 
 # 严格过滤无标识或 HTML 劫持阻断页面，免疫上游源的降级攻击
 if [ -s "$TMP_PROBE" ] && grep -q "xykt" "$TMP_PROBE" 2>/dev/null; then
